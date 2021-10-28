@@ -92,7 +92,8 @@ ul, ul li, ol, ol li, p, form, input {
 a {
     text-decoration: none;
     outline: none;
-    color: #2ec06c;
+    /* color: #2ec06c; */
+    color: #333333;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
@@ -326,7 +327,7 @@ img {
     font-size: 30px;
 }
 
-.hoverEffect .item:hover .overlay {
+/* .hoverEffect .item:hover .overlay {
     left: -10px;
     top: -10px;
 }
@@ -336,6 +337,19 @@ img {
 }
 
 .hoverEffect .item:hover .content {
+    opacity: 1;
+} */
+
+.hoverEffect div:first-child .item .overlay {
+    left: -10px;
+    top: -10px;
+}
+
+.hoverEffect div:first-child .item .overlay:before {
+    opacity: 1;
+}
+
+.hoverEffect div:first-child .item .content {
     opacity: 1;
 }
 
@@ -598,6 +612,22 @@ footer .copyright {
     #counting .number {
         font-size: 50px;
     }
+
+    #latestBlog article .date {
+        padding: 8px 12px;
+    }
+
+    #latestBlog article .date .number {
+        font-size: 18px;
+    }
+
+    #latestBlog article .date .text {
+        font-size: 11px;
+    }
+
+    #latestBlog article .articleTitle {
+        font-size: 11px;
+    }
 }
 
 @media (max-width: 640px) {
@@ -635,5 +665,16 @@ footer .copyright {
 @media (max-width: 768px) {
     .hoverEffect .item {
         margin-bottom: 15px;
+    }
+
+    #latestBlog {
+        text-align: center;
+    }
+
+    #latestBlog article {
+        display: inline-block;
+        max-width: 380px;
+        margin-bottom: 30px;
+        text-align: left;
     }
 }

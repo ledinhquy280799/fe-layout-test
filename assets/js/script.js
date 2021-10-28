@@ -4,4 +4,17 @@ $(document).ready(function() {
         $('#openMap').toggle();
         $('#closeMap').toggle();
     })
+
+    $('[data-fancybox]').fancybox({
+        animationEffect: "slide",
+        transitionEffect: "fade",
+        loop: "true",
+        buttons: [
+            "zoom",
+            "share",
+            "slideShow",
+            "thumbs",
+            "close"
+        ]
+    });
 });

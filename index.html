@@ -22,10 +22,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
 
+    <!-- Fancybox css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+
     <!-- Main CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
+    <!-- Header -->
     <header id="header">
         <div id="headerInner">
             <nav id="navigation-bar" class="navbar navbar-default">
@@ -37,11 +41,11 @@
                         <div id="navbar-collapse" class="collapse navbar-collapse pull-left">
                             <nav class="nav navbar-nav">
                                 <ul class="nav navbar-nav">
-                                    <li><a href="">About</a></li>
-                                    <li><a href="">Service</a></li>
-                                    <li><a href="">Work</a></li>
-                                    <li><a href="">Blog</a></li>
-                                    <li><a href="">Contact</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Service</a></li>
+                                    <li><a href="#">Work</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Contact</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -61,7 +65,7 @@
                     </div>
                 </div>
             </nav>
-            <section id="slider" class="carousel slide container">
+            <section id="slider" class="carousel slide container" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="item active">
                         <h2 class="sectionHeading">
@@ -89,22 +93,22 @@
                     </div>
                 </div>
                 <ol class="carousel-indicators clearfix">
-                    <li>
+                    <li data-target="#slider" data-slide-to="0">
                         <div class="inner">
                             <span class="number">01</span> intro
                         </div>
                     </li>
-                    <li>
+                    <li data-target="#slider" data-slide-to="1">
                         <div class="inner">
                             <span class="number">02</span> work
                         </div>
                     </li>
-                    <li>
+                    <li data-target="#slider" data-slide-to="2">
                         <div class="inner">
                             <span class="number">03</span> about
                         </div>
                     </li>
-                    <li>
+                    <li data-target="#slider" data-slide-to="3">
                         <div class="inner">
                             <span class="number">04</span> contacts
                         </div>
@@ -115,6 +119,7 @@
     </header>
 
     <main>
+        <!-- Story -->
         <section id="story">
             <div class="container">
                 <h2 class="sectionHeading">
@@ -158,6 +163,7 @@
             </div>
         </section>
 
+        <!-- Counting -->
         <section id="counting">
             <div class="container">
                 <div class="row inline-columns">
@@ -185,6 +191,7 @@
             </div>
         </section>
 
+        <!-- Portfolio -->
         <section id="portfolio">
             <div class="container">
                 <h2 class="sectionHeading">
@@ -197,37 +204,37 @@
             <div class="sectionContent">
                 <ul class="portfolioItems" style="position: relative; height: 617.175px;">
                     <li class="item" style="position: absolute;left: 0px;top: 0px;">
-                        <a href="#">
+                        <a href="./assets/images/our-work/img-1.jpg" data-fancybox="gallery" data-caption="image one">
                             <img src="./assets/images/our-work/img-1.jpg" alt="">
                         </a>
                     </li>
                     <li class="item" style="position: absolute; left: 379px; top: 0px;">
-                        <a href="#">
+                        <a href="./assets/images/our-work/img-2.jpg" data-fancybox="gallery" data-caption="image two">
                             <img src="./assets/images/our-work/img-2.jpg" alt="">
                         </a>
                     </li>
                     <li class="item" style="position: absolute; left: 759px; top: 0px;">
-                        <a href="#">
+                        <a href="./assets/images/our-work/img-3.jpg" data-fancybox="gallery" data-caption="image three">
                             <img src="./assets/images/our-work/img-3.jpg" alt="">
                         </a>
                     </li>
                     <li class="item" style="position: absolute; left: 1139px; top: 0px;">
-                        <a href="#">
+                        <a href="./assets/images/our-work/img-4.jpg" data-fancybox="gallery" data-caption="image four">
                             <img src="./assets/images/our-work/img-4.jpg" alt="">
                         </a>
                     </li>
                     <li class="item" style="position: absolute; left: 0px; top: 308px;">
-                        <a href="#">
+                        <a href="./assets/images/our-work/img-5.jpg" data-fancybox="gallery" data-caption="image five">
                             <img src="./assets/images/our-work/img-5.jpg" alt="">
                         </a>
                     </li>
                     <li class="item" style="position: absolute; left: 379px; top: 308px;">
-                        <a href="#">
+                        <a href="./assets/images/our-work/img-6.jpg" data-fancybox="gallery" data-caption="image six">
                             <img src="./assets/images/our-work/img-6.jpg" alt="">
                         </a>
                     </li>
                     <li class="item" style="position: absolute; left: 1139px; top: 308px;">
-                        <a href="#">
+                        <a href="./assets/images/our-work/img-7.jpg" data-fancybox="gallery" data-caption="image seven">
                             <img src="./assets/images/our-work/img-7.jpg" alt="">
                         </a>
                     </li>
@@ -235,6 +242,7 @@
             </div>
         </section>
 
+        <!-- Latest Blog -->
         <section id="latestBlog">
             <div class="container">
                 <h2 class="sectionHeading">
@@ -328,6 +336,7 @@
             </div>
         </section>
 
+        <!-- Map -->
         <section id="map">
             <div class="container">
                 <h2 class="sectionHeading">
@@ -342,6 +351,7 @@
         </section>
     </main>
 
+    <!-- Footer -->
     <footer id="footer">
         <div class="container">
             <div class="row">
@@ -398,56 +408,96 @@
                 <div class="col-md-4 col-sm-6">
                     <div class="colInfo">
                         <h3 class="colHeading">Blogs</h3>
+                        <ul class="listArticles">
+                            <li>
+                                <a href="#" class="articleThumb fsr">
+                                    <img src="./assets/images/our-blog/img-4.jpg" alt="">
+                                </a>
+                                <div class="info">
+                                    <h3 class="articleTitle">
+                                        <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing</a>
+                                    </h3>
+                                    <div class="date">
+                                        Jan 9, 2016
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="articleThumb fsr">
+                                    <img src="./assets/images/our-blog/img-5.jpg" alt="">
+                                </a>
+                                <div class="info">
+                                    <h3 class="articleTitle">
+                                        <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing</a>
+                                    </h3>
+                                    <div class="date">
+                                        Jan 9, 2016
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="articleThumb fsr">
+                                    <img src="./assets/images/our-blog/img-6.jpg" alt="">
+                                </a>
+                                <div class="info">
+                                    <h3 class="articleTitle">
+                                        <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing</a>
+                                    </h3>
+                                    <div class="date">
+                                        Jan 9, 2016
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                    <ul class="listArticles">
-                        <li>
-                            <a href="#" class="articleThumb fsr">
-                                <img src="./assets/images/our-blog/img-4.jpg" alt="">
-                            </a>
-                            <div class="info">
-                                <h3 class="articleTitle">
-                                    <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing</a>
-                                </h3>
-                                <div class="date">
-                                    Jan 9, 2016
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#" class="articleThumb fsr">
-                                <img src="./assets/images/our-blog/img-5.jpg" alt="">
-                            </a>
-                            <div class="info">
-                                <h3>
-                                    <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing</a>
-                                </h3>
-                                <div class="date">
-                                    Jan 9, 2016
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#" class="articleThumb fsr">
-                                <img src="./assets/images/our-blog/img-6.jpg" alt="">
-                            </a>
-                            <div class="info">
-                                <h3>
-                                    <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing</a>
-                                </h3>
-                                <div class="date">
-                                    Jan 9, 2016
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
                 </div>
-                <div class="col-md-4 col-sm-6"></div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="colInfo">
+                        <h3 class="colHeading">instagram</h3>
+                        <div class="instagramImages clearfix">
+                            <a href="#">
+                                <img src="./assets/images/instagram/img-1.jpg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./assets/images/instagram/img-2.jpg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./assets/images/instagram/img-3.jpg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./assets/images/instagram/img-4.jpg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./assets/images/instagram/img-5.jpg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./assets/images/instagram/img-6.jpg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./assets/images/instagram/img-7.jpg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./assets/images/instagram/img-8.jpg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./assets/images/instagram/img-9.jpg" alt="">
+                            </a>
+                        </div>
+                        <a href="#" class="morePhoto">View more photos</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                © 2016 MoGo free PSD template by <a href="#">Laaqiq</a>
             </div>
         </div>
     </footer>
 
     <!-- Jquery -->
     <script src="./assets/js/jquery-3.6.0.min.js"></script>
+
+    <!-- Fancybox javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
 
     <!-- Main Javascript -->
     <script src="./assets/js/script.js"></script>

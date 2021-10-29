@@ -739,6 +739,18 @@ footer .copyright a {
         font-size: 9px;
     }
 
+    #slider .carousel-inner {
+        height: 205px;
+    }
+
+    #slider .sectionHeading {
+        font-size: 45px;
+    }
+
+    #slider .sectionHeading .subHeading {
+        font-size: 22px;
+    }
+
     footer {
         padding-top: 30px;
     }
@@ -807,6 +819,18 @@ footer .copyright a {
     #slider {
         padding-top: 10px;
     }
+
+    #slider .carousel-inner {
+        height: 270px;
+    }
+
+    #slider .carousel-indicators {
+        margin-top: 30px;
+    }
+
+    #slider .carousel-indicators li .number {
+        display: none;
+    }
 }
 
 .subscribeForm input[type=email]:focus {
@@ -860,4 +884,17 @@ footer .copyright a {
     outline: none;
     cursor: pointer;
     line-height: 1;
+}
+
+.animate {
+    top: -70px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #f28989 !important;
+    z-index: 100;
 }

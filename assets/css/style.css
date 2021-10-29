@@ -79,9 +79,19 @@ ul, ul li, ol, ol li, p, form, input {
     padding: 0;
 }
 
+#navigation-bar .menuItem {
+    float: right;
+}
+
 #navigation-bar .iconsGroup li a {
     border: none;
     font-size: 18px;
+}
+
+#navigation-bar .navbar-nav>li>a:hover, #navigation-bar .navbar-nav>.active>a, #navigation-bar .navbar-nav>.active>a:hover {
+    color: #fce38a;
+    border-color: #fce38a;
+    background: none;
 }
 
 #navigation-bar .navbar-nav>li>a {
@@ -669,7 +679,7 @@ footer .copyright a {
         width: 70px;
     }
 
-    footer .nino-followUs {
+    footer .followUs {
         margin: 15px 0;
     }
 }
@@ -796,7 +806,7 @@ footer .copyright a {
         left: 0px;
     }
 
-    #nino-navbar .navbar-nav>li>a {
+    #navigation-bar .navbar-nav>li>a {
         padding: 10px 5px 5px;
     }
 
@@ -897,4 +907,13 @@ footer .copyright a {
     right: 0;
     background-color: #f28989 !important;
     z-index: 100;
+}
+
+#navigation-bar .navbar-toggle {
+    margin-right: 0;
+    border: none;
+}
+
+#navigation-bar .navbar-toggle .icon-bar {
+    background: #fff;
 }

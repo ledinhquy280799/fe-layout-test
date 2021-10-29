@@ -440,6 +440,10 @@ img {
     color: #fff;
 }
 
+#portfolio .portfolioItems li a:hover .overlay {
+    top: 0;
+}
+
 #portfolio .portfolioItems li a, #portfolio .portfolioItems li a img {
     display: block;
     position: relative;

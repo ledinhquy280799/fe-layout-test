@@ -94,6 +94,11 @@ ul, ul li, ol, ol li, p, form, input {
     background: none;
 }
 
+#navigation-bar .iconsGroup .mdi-cart-outline:hover, #navigation-bar .iconsGroup .mdi-magnify:hover {
+    color: #fce38a;
+    background: none;
+}
+
 #navigation-bar .navbar-nav>li>a {
     color: #fff;
     font-weight: 500;
@@ -103,11 +108,11 @@ ul, ul li, ol, ol li, p, form, input {
     margin: 0 12px;
 }
 
-#navigation-bar .navbar-nav>li>a:hover,
+/* #navigation-bar .navbar-nav>li>a:hover,
 #navigation-bar .iconsGroup .mdi-cart-outline:hover, 
 #navigation-bar .iconsGroup .mdi-magnify:hover {
     color: #ffffff9e;
-}
+} */
 
 #navigation-bar .iconsGroup {
     padding-top: 8px;
@@ -363,7 +368,7 @@ img {
     font-size: 30px;
 }
 
-/* .hoverEffect .item:hover .overlay {
+.hoverEffect .item:hover .overlay {
     left: -10px;
     top: -10px;
 }
@@ -373,19 +378,6 @@ img {
 }
 
 .hoverEffect .item:hover .content {
-    opacity: 1;
-} */
-
-.hoverEffect div:first-child .item .overlay {
-    left: -10px;
-    top: -10px;
-}
-
-.hoverEffect div:first-child .item .overlay:before {
-    opacity: 1;
-}
-
-.hoverEffect div:first-child .item .content {
     opacity: 1;
 }
 

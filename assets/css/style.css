@@ -441,10 +441,6 @@ img {
     color: #fff;
 }
 
-#portfolio .portfolioItems li a:hover .overlay {
-    top: 0;
-}
-
 #portfolio .portfolioItems li a, #portfolio .portfolioItems li a img {
     display: block;
     position: relative;
@@ -529,6 +525,9 @@ img {
 #map .sectionHeading {
     color: #f28989;
     margin: 0;
+}
+
+#map .sectionHeading span {
     cursor: pointer;
 }
 
@@ -918,4 +917,19 @@ footer .copyright a {
 
 footer .subscribeForm .input-group .btn:hover {
     background: #f28989;
+}
+
+#gallery {
+    line-height:0;
+    -webkit-column-count:4; /* split it into 5 columns */
+    -webkit-column-gap:0px; /* give it a 5px gap between columns */
+    -moz-column-count:4;
+    -moz-column-gap:0px;
+    column-count:4;
+    column-gap:0px;
+}
+
+#gallery img {
+    width: 25% !important;
+    height: auto !important;
 }

@@ -62,6 +62,7 @@ h4 {
     background: none;
     border: none;
     border-radius: 0;
+    box-shadow: none;
 }
 
 #navigation-bar .navbar-brand {
@@ -192,7 +193,7 @@ a {
 }
 
 a:hover {
-    color: #666;
+    color: #f28989;
     text-decoration: none;
 }
 
@@ -784,6 +785,7 @@ footer .copyright a {
 
     #navigation-bar {
         background: rgba(234,83,83,0.70);
+
     }
 
     #navigation-bar .navbar-header {
@@ -912,4 +914,8 @@ footer .copyright a {
 
 #navigation-bar .navbar-toggle .icon-bar {
     background: #fff;
+}
+
+footer .subscribeForm .input-group .btn:hover {
+    background: #f28989;
 }
